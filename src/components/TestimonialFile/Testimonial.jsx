@@ -3,19 +3,26 @@ import './Testimonial.css';
 import {testimonialsData} from '../../data/testimonialsData';
 import leftArrow from '../../assets/leftArrow.png';
 import rightArrow from '../../assets/rightArrow.png';
+import {motion} from 'framer-motion';
 
 const Testimonial = () => {
-
+    const transition = {type: 'spring', duration: 3};
     const [selected, setSelected] = useState(0);
     const tLength = testimonialsData.length;
 
   return (
-    <div className='Testimonials'>
+    <div className='Testimonials' id='testimonials'>
         <div className="leftside">
         <span>Testimonials </span>
         <span className='stroke-text'>From Experts </span>
         <span>and the Trainers</span>
-        <span>{testimonialsData[selected].review}</span>
+        <motion.span
+        key={selected} 
+        initial={{opacity: 0, x: -100}}
+        animate={{opacity: 1, x: 0}}
+        exit={{opacity: 0, x: -100}}
+        transition={transition}
+        >{testimonialsData[selected].review}</motion.span>
         <span>
             <span style={{color: "var(--orange)"}}>
                 {testimonialsData[selected].name}
@@ -25,9 +32,23 @@ const Testimonial = () => {
         </div>
 
         <div className="rightside">
-            <div></div>
-            <div></div>
-        <img src={testimonialsData[selected].image} alt="" />
+            <motion.div
+                initial={{opacity: 0, x: -100}}
+                transition={{...transition, duration: 2}}
+                whileInView={{opacity: 1, x: 0}}
+            ></motion.div>
+            <motion.div
+            initial={{opacity: 0, x: 100}}
+                transition={{...transition, duration: 2}}
+                whileInView={{opacity: 1, x: 0}}
+            ></motion.div>
+        <motion.img
+        key={selected} 
+        initial={{opacity: 0, x: 100}}
+        animate={{opacity: 1, x: 0}}
+        exit={{opacity: 0, x: -100}}
+        transition={transition}
+        src={testimonialsData[selected].image} alt="" />
 
         <div className="arrows">
             <img 

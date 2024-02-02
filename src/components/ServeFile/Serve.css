@@ -86,3 +86,33 @@
 .partners>img{
     width: 2.5rem;
 }
+
+@media screen and (max-width: 768px){
+    .Serve{
+        flex-direction: column;
+    }
+    
+    .left-serve{
+        grid-auto-rows: auto;
+        overflow: hidden;
+    }
+
+    .left-serve>:nth-child(1){
+        width: 7rem;
+        height: 6rem;
+    }
+
+    .left-serve>:nth-child(2){
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .left-serve>:nth-child(3){
+        width: 7rem;
+    }
+
+    .left-serve>:nth-child(4){
+        width: 7rem;
+        height: 6rem;
+    }
+}
