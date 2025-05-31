@@ -1,6 +1,7 @@
 {
   "name": "fitclub",
   "version": "0.1.0",
+  "homepage": "https://shreejapandey.github.io/Fitclub-webapp",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
