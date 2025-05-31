@@ -1,6 +1,6 @@
 # Fitness Hub : Responsive Fitness Webpage
 
-Welcome to Fitness Hub, your go-to fitness destination built with ReactJS! This responsive web application provides a sleek and engaging interface to help users stay fit and healthy.
+Welcome to FitClub, your go-to fitness destination built with ReactJS! This responsive web application provides a sleek and engaging interface to help users stay fit and healthy.
 
 ## Preview
 ![Fitness Hub](home.png)
@@ -35,4 +35,5 @@ Explore Fitness Hub and start your fitness journey by following these steps:
 ###### Access the app in your web browser at http://localhost:3000.
 
 ## Contact
-Have questions or feedback? Feel free to reach out to me at sankalpforwork@gmail.com.
+Have questions or feedback? Feel free to reach out to me at shreejapandeyy@gmail.com.
+
